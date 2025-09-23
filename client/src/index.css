@@ -1,0 +1,43 @@
+.app-container {
+  min-height: 100vh;
+  background-color: #1f2838;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+body {
+  margin: 0;
+  background-color: #111;
+  color: #fff;
+}
+
+svg {
+  width: 256px;
+  height: 256px;
+}
+
+button {
+  transition: all 0.2s ease;
+}
+
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #94ade4;
+  transform: scale(1.05);
+}
+
+.app-container span { /* Word display */
+  display: inline-block;
+  margin: 0 8px;
+  margin-bottom: 20px;
+  font-size: 3rem;
+  font-weight: bold;
+}
